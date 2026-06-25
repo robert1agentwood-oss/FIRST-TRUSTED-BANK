@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>FIRST TRUSTED BANK</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="bank-box">
+    <h1>FIRST TRUSTED BANK</h1>
+    <p class="demo">Demo Banking Project — Not a real bank</p>
+
+    <div id="auth">
+      <h2>Login</h2>
+      <input id="email" type="email" placeholder="Email">
+      <input id="password" type="password" placeholder="Password">
+      <button onclick="login()">Login</button>
+      <button onclick="signup()">Create Account</button>
+    </div>
+
+    <div id="dashboard" style="display:none;">
+      <h2>Welcome to FIRST TRUSTED BANK</h2>
+      <p>Account Holder: <span id="userEmail"></span></p>
+      <p>Account Number: 1002457890</p>
+      <h3>Balance: $<span id="balance">5000</span></h3>
+
+      <input id="amount" type="number" placeholder="Amount">
+      <button onclick="deposit()">Deposit</button>
+      <button onclick="withdraw()">Withdraw</button>
+
+      <h3>Settings</h3>
+      <input id="newEmail" type="email" placeholder="Change email">
+      <button onclick="changeEmail()">Update Email</button>
+
+      <button onclick="logout()">Logout</button>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
+<input id="email" type="email" placeholder="Email">
+<input id="password" type="password" placeholder="Password">
+<button onclick="login()">Login</button>
+<button onclick="signup()">Create Account</button>
